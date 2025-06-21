@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Stranger Things Tribute - Galería</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/jpeg" href="../img/favicon.jpg">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Stranger Things Tribute</h1>
+      <ul>
+        <li><a href="index.html">Ver tráiler</a></li>
+        <li><a href="musica.html">Música icónica</a></li>
+        <li><a href="episodios.html">Episodios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="sobre.html">Sobre la serie</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+  <section class="carousel" aria-label="Galería Stranger Things">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+        <figure>
+          <img src="../img/Stranger-Things-(1).jpg" alt="Escena Stranger Things 1">
+          <figcaption>Once en el bosque, enfrentando el peligro.</figcaption>
+        </figure>
+        <div class="carousel__snapper">
+          <a href="#carousel__slide4" class="carousel__prev" aria-label="Ir a la última diapositiva"></a>
+          <a href="#carousel__slide2" class="carousel__next" aria-label="Ir a la siguiente diapositiva"></a>
+        </div>
+      </li>
+      <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+        <figure>
+          <img src="../img/Stranger-Things-(2).jpg" alt="Escena Stranger Things 2">
+          <figcaption>El grupo reunido en la casa de Mike.</figcaption>
+        </figure>
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide1" class="carousel__prev" aria-label="Ir a la diapositiva anterior"></a>
+        <a href="#carousel__slide3" class="carousel__next" aria-label="Ir a la siguiente diapositiva"></a>
+      </li>
+      <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+        <figure>
+          <img src="../img/Stranger-Things-(3).jpg" alt="Escena Stranger Things 3">
+          <figcaption>La bicicleta abandonada: la desaparición de Will.</figcaption>
+        </figure>
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide2" class="carousel__prev" aria-label="Ir a la diapositiva anterior"></a>
+        <a href="#carousel__slide4" class="carousel__next" aria-label="Ir a la siguiente diapositiva"></a>
+      </li>
+      <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+        <figure>
+          <img src="../img/Stranger-Things-(4).jpg" alt="Escena Stranger Things 4">
+          <figcaption>Demogorgon aparece en el laboratorio de Hawkins.</figcaption>
+        </figure>
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide3" class="carousel__prev" aria-label="Ir a la diapositiva anterior"></a>
+        <a href="#carousel__slide1" class="carousel__next" aria-label="Ir a la primera diapositiva"></a>
+      </li>
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1" class="carousel__navigation-button" aria-label="Ir a la diapositiva 1"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2" class="carousel__navigation-button" aria-label="Ir a la diapositiva 2"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3" class="carousel__navigation-button" aria-label="Ir a la diapositiva 3"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4" class="carousel__navigation-button" aria-label="Ir a la diapositiva 4"></a>
+        </li>
+      </ol>
+    </aside>
+  </section>
+</main>
+  <footer>
+    <p>Tributo a Stranger Things &copy; 2025</p>
+  </footer>
+</body>
+</html>
