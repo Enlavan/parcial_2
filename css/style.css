@@ -5,12 +5,16 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  background: #1a1a1a url('../img/back.jpeg') repeat;
+  background: #1b1b1b url('../img/back.jpeg') repeat;
   color: #fff;
   font-family: 'Segoe UI', Arial, sans-serif;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 900px;
@@ -20,20 +24,14 @@ body {
   background-size: auto; 
   background-attachment: fixed;
   }
-/*
-* {
-  box-sizing: border-box;
-  scrollbar-width: none;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-*/
+
 header {
   background: #111;
   padding: 1.5rem 0 1rem 0;
+}
+
+#logo_image{
+  max-width: 550px;
 }
 
 nav {
@@ -112,6 +110,13 @@ font-family: 'ITCBenguiatStdBoldCn', serif, 'Segoe UI', Arial, sans-serif;
 
 }
 
+section:not(.carousel) {
+  background: rgba(34, 34, 34, 0.98);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+
 /* ========== CAROUSEL ========== */
 
 section.carousel {
@@ -126,12 +131,7 @@ section.carousel {
   align-items: center;
 }
 
-section:not(.carousel) {
-  background: rgba(34, 34, 34, 0.98);
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-}
+
 
 
 .carousel {
@@ -295,3 +295,104 @@ section:not(.carousel) {
   font-size: 0;
   cursor: pointer;
   transiti
+
+
+/* ========== COMMENTARIOS ========== */
+
+.comentarios-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+#first_line {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+#first_line label,
+#first_line input {
+  flex: 1;
+  min-width: 150px;
+}
+
+#second_line {
+  display: flex;
+  gap: 48px;
+  margin: 10px;
+  width: 100%; 
+}
+
+#second_line textarea {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.comentarios-section form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.comentarios-section form input,
+.comentarios-section form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.comentarios-section form button {
+  margin-top: 24px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: start;
+}
+
+.comentarios-section form button:hover {
+  background-color: #a10c14;
+}
+
+
+
+
+/* ========== ERROR_PAGE ========== */
+
+.error-404-section {
+  text-align: center;
+}
+
+.error-404-section h2 {
+  font-size: 3rem;
+  color: #e50914;
+}
+
+.error-404-section p {
+  font-size: 1.2rem;
+}
+
+.error-404-section a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error-404-section a:hover {
+  text-decoration: underline;
+}
+
+
+
+
